@@ -1,0 +1,73 @@
+{
+  "repo": "querylab",
+  "language": "SQL",
+  "category": "Databases",
+  "goal": "Package relational fixtures and sqlite3 checks for query correctness.",
+  "review_model": {
+    "terms": [
+      "index fit",
+      "join width",
+      "constraint risk",
+      "plan drift"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "index fit",
+      "signal": 58,
+      "slack": 23,
+      "drag": 15,
+      "confidence": 77,
+      "score": 171,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "join width",
+      "signal": 55,
+      "slack": 46,
+      "drag": 23,
+      "confidence": 90,
+      "score": 177,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "constraint risk",
+      "signal": 52,
+      "slack": 54,
+      "drag": 31,
+      "confidence": 93,
+      "score": 158,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "plan drift",
+      "signal": 75,
+      "slack": 50,
+      "drag": 23,
+      "confidence": 69,
+      "score": 200,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "index fit",
+      "signal": 80,
+      "slack": 41,
+      "drag": 16,
+      "confidence": 76,
+      "score": 229,
+      "lane": "ship"
+    }
+  ]
+}

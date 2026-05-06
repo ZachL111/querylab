@@ -56,3 +56,8 @@ foreach ($pathPattern in $knownPaths) {
 }
 
 sqlite3 :memory: ".read tests/test.sql"
+
+
+sqlite3 :memory: ".read tests/domain_review.sql"
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-querylab-detail.ps1

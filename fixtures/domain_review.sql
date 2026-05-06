@@ -1,0 +1,6 @@
+INSERT INTO domain_review_cases VALUES
+  ('baseline', 'index fit', 58, 23, 15, 77, 171, 'ship'),
+  ('stress', 'join width', 55, 46, 23, 90, 177, 'ship'),
+  ('edge', 'constraint risk', 52, 54, 31, 93, 158, 'ship'),
+  ('recovery', 'plan drift', 75, 50, 23, 69, 200, 'ship'),
+  ('stale', 'index fit', 80, 41, 16, 76, 229, 'ship');
